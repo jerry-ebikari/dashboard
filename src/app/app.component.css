@@ -70,8 +70,7 @@ mat-sidenav-content {
     width: 70%;
   }
   #sidenav {
-    background-color: hsl(0, 0%, 100%, 0);
-    backdrop-filter: blur(0.7rem);
+    background-color: black;
   }
   .navlinks {
     margin-top: 2em;

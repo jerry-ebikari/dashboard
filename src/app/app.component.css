@@ -67,7 +67,6 @@ mat-sidenav-content {
 }
 
 .navlinks a:hover {
-  /* background-color: #0E6EB8; */
   background-color: blue;
 }
 
@@ -80,7 +79,7 @@ mat-sidenav-content {
     width: 70%;
   }
   #sidenav {
-    background-color: hsl(0, 0%, 100%, 0.1);
+    background-color: hsl(0, 0%, 100%, 0);
     backdrop-filter: blur(0.7rem);
   }
   .navlinks {
@@ -90,10 +89,9 @@ mat-sidenav-content {
     background-color: hsl(0, 0%, 100%, 0.2);
   }
   .active {
-    background-color: hsl(0, 0%, 100%, 0.2);
+    background-color: blue;
   }
   header {
     box-shadow: 0 0.1px;
-    /* color: blue; */
   }
 }

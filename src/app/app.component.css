@@ -1,12 +1,3 @@
-:root {
-  --color-blue: #0e6eb8;
-  --color-1: #442288;
-  --color-2: #6ca2ea;
-  --color-3: #b5d33d;
-  --color-4: #fed23f;
-  --color-5: #eb7d5b;
-  --angle: 0deg;
-}
 p {
   font-family: Lato;
 }
@@ -89,7 +80,7 @@ mat-sidenav-content {
     background-color: hsl(0, 0%, 100%, 0.2);
   }
   .active {
-    background-color: blue;
+    background-color: rgb(27, 27, 221);
   }
   header {
     box-shadow: 0 0.1px;

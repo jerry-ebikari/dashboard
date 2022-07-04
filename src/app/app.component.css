@@ -1,0 +1,99 @@
+:root {
+  --color-blue: #0e6eb8;
+  --color-1: #442288;
+  --color-2: #6ca2ea;
+  --color-3: #b5d33d;
+  --color-4: #fed23f;
+  --color-5: #eb7d5b;
+  --angle: 0deg;
+}
+p {
+  font-family: Lato;
+}
+
+header {
+  height: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu.icon {
+  font-size: 1.4rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+#brand {
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+mat-sidenav-content {
+  background-color: #222;
+  height: 100%;
+}
+
+#sidenav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(15, 13, 13);
+  padding: 2em;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  padding: 1em;
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.navlinks a:hover {
+  /* background-color: #0E6EB8; */
+  background-color: blue;
+}
+
+.active {
+  background-color: blue;
+}
+
+@media (max-width: 800px) {
+  mat-sidenav {
+    width: 70%;
+  }
+  #sidenav {
+    background-color: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(0.7rem);
+  }
+  .navlinks {
+    margin-top: 2em;
+  }
+  .navlinks a:hover {
+    background-color: hsl(0, 0%, 100%, 0.2);
+  }
+  .active {
+    background-color: hsl(0, 0%, 100%, 0.2);
+  }
+  header {
+    box-shadow: 0 0.1px;
+    /* color: blue; */
+  }
+}

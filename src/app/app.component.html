@@ -1,0 +1,62 @@
+<span
+  *ngIf="sidenav.mode == 'over'"
+  class="menu icon"
+  (click)="sidenav.toggle()"
+>
+  <i *ngIf="sidenav.opened == false" class="hamburger icon"></i>
+  <i *ngIf="sidenav.opened" class="close icon"></i>
+</span>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened #sidenav>
+    <div id="sidenav">
+      <span *ngIf="sidenav.mode == 'side'" id="brand">
+        <i class="large blue building icon"></i>TARICORP
+      </span>
+      <div class="navlinks">
+        <a
+          (click)="sidenav.mode == 'over' && sidenav.toggle()"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink=""
+        >
+          <i class="th large icon"></i>Dashboard
+        </a>
+        <a
+          (click)="sidenav.mode == 'over' && sidenav.toggle()"
+          routerLinkActive="active"
+          routerLink="profile"
+        >
+          <i class="large user icon"></i>Profile
+        </a>
+        <a
+          (click)="sidenav.mode == 'over' && sidenav.toggle()"
+          routerLinkActive="active"
+          routerLink="students"
+        >
+          <i class="large user graduate icon"></i>Student
+        </a>
+        <a
+          (click)="sidenav.mode == 'over' && sidenav.toggle()"
+          routerLinkActive="active"
+          routerLink="courses"
+        >
+          <i class="large book open icon"></i>Courses
+        </a>
+        <a
+          (click)="sidenav.mode == 'over' && sidenav.toggle()"
+          routerLinkActive="active"
+          routerLink="settings"
+        >
+          <i class="large cog icon"></i>Settings
+        </a>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Header -->
+    <header>
+      <h1 *ngIf="sidenav.mode == 'over'">TARICORP</h1>
+    </header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
